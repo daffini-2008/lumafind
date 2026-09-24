@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LumaFind — Discover Images</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="brand">
+            <a href="#" class="logo">LumaFind</a>
+            <span class="tagline">Find visuals that spark your next idea.</span>
+        </div>
+
+        <nav class="header-nav">
+            <a href="#search-section">Search</a>
+            <a href="#results">Explore</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="search-section">
+
+            <div class="hero-content">
+                <p class="eyebrow">VISUAL DISCOVERY</p>
+
+                <h1>
+                    Search the world,
+                    <span>one image at a time.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Type a topic below and discover a collection of images
+                    tailored to your curiosity.
+                </p>
+            </div>
+
+
+            <div class="search-panel">
+
+                <form id="searchForm">
+
+                    <label for="searchInput">
+                        What do you want to explore?
+                    </label>
+
+                    <div class="search-row">
+
+                        <input
+                            type="search"
+                            id="searchInput"
+                            name="search"
+                            placeholder="Try nature, architecture, space..."
+                            autocomplete="off"
+                        >
+
+                        <button
+                            type="submit"
+                            id="searchButton"
+                        >
+                            Search
+                        </button>
+
+                        <button
+                            type="reset"
+                            id="clearButton"
+                            class="clear-button"
+                        >
+                            Clear
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <div class="quick-picks">
+
+                    <span class="quick-label">Quick picks</span>
+
+                    <button type="button" class="chip">
+                        Nature
+                    </button>
+
+                    <button type="button" class="chip">
+                        Cities
+                    </button>
+
+                    <button type="button" class="chip">
+                        Animals
+                    </button>
+
+                    <button type="button" class="chip">
+                        Space
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="results-section">
+
+            <div class="results-heading">
+
+                <div>
+                    <p class="section-label">DISCOVER</p>
+                    <h2>Search results</h2>
+                </div>
+
+                <p id="resultCount">
+                    Results will appear here
+                </p>
+
+            </div>
+
+
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">✦</div>
+
+                <h3>Search to see results</h3>
+
+                <p>
+                    Enter a topic above and your image collection
+                    will appear here.
+                </p>
+            </div>
+
+
+            <div id="results" class="results-grid">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <p>© 2026 LumaFind · Built with HTML & CSS</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
